@@ -1,0 +1,150 @@
+/* frontend/src/components/SchemaViewer.css */
+.schema-viewer {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.schema-viewer.loading,
+.schema-viewer.error {
+  text-align: center;
+  padding: 40px;
+  color: #6c757d;
+}
+
+.schema-viewer.error button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.schema-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fd7e14;
+}
+
+.schema-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.schema-header .refresh-btn {
+  background: #fd7e14;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.schema-header .refresh-btn:hover {
+  background: #e96b00;
+}
+
+.no-schemas {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6c757d;
+}
+
+.schemas-list {
+  display: grid;
+  gap: 20px;
+}
+
+.schema-card {
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 20px;
+  transition: box-shadow 0.2s;
+}
+
+.schema-card:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.table-name {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 18px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.schema-details table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.schema-details th {
+  background: #f8f9fa;
+  padding: 10px 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.schema-details td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.column-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.column-type {
+  font-family: 'Courier New', monospace;
+  color: #007bff;
+}
+
+.column-constraints {
+  gap: 2px;
+  flex-wrap: wrap;
+}
+
+.constraint {
+  padding: 2px 5px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 50;
+  text-transform: uppercase;
+}
+
+.constraint.pk {
+  background: #28a745;
+  color: white;
+}
+
+.constraint.unique {
+  background: #17a2b8;
+  color: white;
+}
+
+.constraint.not-null {
+  background: #6c757d;
+  color: white;
+}
+
+.table-stats {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #dee2e6;
+  color: #6c757d;
+  font-size: 14px;
+}

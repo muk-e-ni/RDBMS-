@@ -1,0 +1,199 @@
+/* frontend/src/components/WebREPL.css */
+.web-repl {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.repl-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #6f42c1;
+}
+
+.repl-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.connection-status {
+  font-size: 14px;
+}
+
+.connection-status .connected {
+  color: #28a745;
+  font-weight: 500;
+}
+
+.connection-status .disconnected {
+  color: #dc3545;
+  font-weight: 500;
+}
+
+.output-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #1e1e1e;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.output-toolbar {
+  background: #2d2d2d;
+  padding: 10px;
+  border-bottom: 1px solid #3e3e3e;
+}
+
+.output-toolbar button {
+  background: #495057;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.output-toolbar button:hover {
+  background: #6c757d;
+}
+
+.output {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #d4d4d4;
+}
+
+.output-line {
+  margin-bottom: 8px;
+  padding: 4px 0;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.output-line .timestamp {
+  color: #6c757d;
+  font-size: 11px;
+  margin-right: 10px;
+}
+
+.output-line pre {
+  margin: 0;
+  display: inline;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.output-line.input {
+  color: #569cd6;
+}
+
+.output-line.success {
+  color: #4ec9b0;
+}
+
+.output-line.error {
+  color: #f44747;
+}
+
+.output-line.system {
+  color: #9cdcfe;
+}
+
+.output-line.data {
+  color: #ce9178;
+}
+
+.output-line.info {
+  color: #b5cea8;
+}
+
+.input-form {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group textarea {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.input-group button {
+  padding: 0 24px;
+  background: #6f42c1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+  align-self: flex-end;
+  height: fit-content;
+}
+
+.input-group button:hover:not(:disabled) {
+  background: #5a32a3;
+}
+
+.input-group button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.input-hint {
+  text-align: right;
+  color: #6c757d;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.examples {
+  margin-top: 20px;
+}
+
+.examples h4 {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.example-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.example-btn {
+  padding: 6px 12px;
+  background: #e2d9f3;
+  border: 1px solid #cbbee6;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #5a32a3;
+}
+
+.example-btn:hover {
+  background: #d0c4e9;
+}
