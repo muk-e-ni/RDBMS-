@@ -20,17 +20,32 @@ A fully-featured relational database management system built from scratch with S
 - **Interactive SQL Console**: Run SQL queries with syntax highlighting
 - **Table Manager**: Create, browse, and drop tables visually
 - **JOIN Visualizer**: Interactive JOIN builder with Venn diagrams
+  
   ![Join visualizer screenshot](docs/screenshots/join-visualizer.png)
+  
 - **Schema Browser**: View table schemas and constraints
+  
   ![schema viewer screenshot](docs/screenshots/schema-viewer.png)
+  
 - **Web REPL**: Real-time SQL console via WebSocket
+  
   ![command line interface ](docs/screenshots/cli-repl.png)
+  
 - **Responsive Design**: Works on desktop and mobile
 
 ###  **APIs & Interfaces**
 - **REST API**: Full CRUD operations via HTTP/JSON
 - **WebSocket REPL**: Real-time SQL execution
 - **Command-line REPL**: Traditional SQL interface
+  
+  #### Creating Tables Example
+  
+  ![command line interface ](docs/screenshots/cli-example.png)
+
+  ### Join Execution Example
+
+  ![command line interface ](docs/screenshots/cli-join-example.png)
+
 - **React Frontend**: Modern, responsive UI
 
 ##  Requirements Met
@@ -48,7 +63,7 @@ A fully-featured relational database management system built from scratch with S
 | Interactive REPL | ✅ Complete | CLI and Web versions |
 | Web App Demo | ✅ Complete | Full-stack React/Flask app |
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 **Backend:**
 - Python 3.8+
@@ -63,8 +78,19 @@ A fully-featured relational database management system built from scratch with S
 - Socket.IO Client
 - CSS3 with Flexbox/Grid
 
-## 🚀 Quick Start
+##  Quick Start
 
+### Running the Overall System 
+1. Clone the repository
+2. Navigate to the root directory
+3. Install python dependencies (pip install -r requirements)
+4. From the root directory, navigate to react-frontend
+5. Execute npm install, then npm start
+6. Run start.py, and there you go
+
+### Running on Command Line
+
+To run myRDBMS on the command line, simply navigate to myrdbms from the root directoy and run python repl.py
 ### **Local Development**
 
 
