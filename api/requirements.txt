@@ -3,6 +3,7 @@ Flask-CORS
 flask-socketio
 python-socketio
 eventlet
+gevent
 gunicorn
 werkzeug
 
