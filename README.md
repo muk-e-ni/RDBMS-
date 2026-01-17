@@ -83,10 +83,12 @@ A fully-featured relational database management system built from scratch with S
 ### Running the Overall System 
 1. Clone the repository
 2. Navigate to the root directory
-3. Install python dependencies (pip install -r requirements)
+3. cd into the api directory and install python dependencies (pip install -r requirements)
 4. From the root directory, navigate to react-frontend
 5. Execute npm install, then npm start
 6. Run start.py, and there you go
+
+   **Note: The flask application should run on port:5000 and the react on :3000**
 
 ### Running on Command Line
 
