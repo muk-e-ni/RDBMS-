@@ -1,0 +1,29 @@
+{
+  "name": "customers",
+  "columns": [
+    {
+      "name": "id",
+      "dtype": "INT",
+      "length": null,
+      "primary_key": true,
+      "unique": true,
+      "nullable": true
+    },
+    {
+      "name": "name",
+      "dtype": "VARCHAR",
+      "length": 50,
+      "primary_key": false,
+      "unique": false,
+      "nullable": true
+    },
+    {
+      "name": "order",
+      "dtype": "INT",
+      "length": null,
+      "primary_key": false,
+      "unique": false,
+      "nullable": true
+    }
+  ]
+}

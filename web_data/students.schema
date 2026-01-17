@@ -1,0 +1,37 @@
+{
+  "name": "students",
+  "columns": [
+    {
+      "name": "id",
+      "dtype": "INT",
+      "length": null,
+      "primary_key": true,
+      "unique": true,
+      "nullable": true
+    },
+    {
+      "name": "first_name",
+      "dtype": "VARCHAR",
+      "length": 50,
+      "primary_key": false,
+      "unique": true,
+      "nullable": true
+    },
+    {
+      "name": "last_name",
+      "dtype": "VARCHAR",
+      "length": 50,
+      "primary_key": false,
+      "unique": false,
+      "nullable": true
+    },
+    {
+      "name": "age",
+      "dtype": "INT",
+      "length": null,
+      "primary_key": false,
+      "unique": false,
+      "nullable": true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "orders",
+  "columns": [
+    {
+      "name": "order",
+      "dtype": "INT",
+      "length": null,
+      "primary_key": true,
+      "unique": true,
+      "nullable": true
+    },
+    {
+      "name": "name",
+      "dtype": "VARCHAR",
+      "length": 50,
+      "primary_key": false,
+      "unique": false,
+      "nullable": true
+    },
+    {
+      "name": "email",
+      "dtype": "VARCHAR",
+      "length": 100,
+      "primary_key": false,
+      "unique": false,
+      "nullable": true
+    }
+  ]
+}
