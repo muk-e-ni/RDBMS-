@@ -3,3 +3,9 @@ Flask-CORS
 flask-socketio
 python-socketio
 eventlet
+gunicorn
+werkzeug
+
+# Development
+black==23.7.0
+flake8==6.0.0
