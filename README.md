@@ -1,6 +1,6 @@
 # Brandon's RDBMS - A Minimal Relational Database Management System
 
-![MyRDBMS Demo](docs/screenshots/dashboard.png)
+![MyRDBMS Demo](docs/screenshots/dashboardscreenshot.png)
 
 
 A fully-featured relational database management system built from scratch with SQL parser, storage engine, indexing, and web interface.
@@ -20,8 +20,11 @@ A fully-featured relational database management system built from scratch with S
 - **Interactive SQL Console**: Run SQL queries with syntax highlighting
 - **Table Manager**: Create, browse, and drop tables visually
 - **JOIN Visualizer**: Interactive JOIN builder with Venn diagrams
+  ![Join visualizer screenshot](docs/screenshots/join-visualizer.png)
 - **Schema Browser**: View table schemas and constraints
+  ![schema viewer screenshot](docs/screenshots/schema-viewer.png)
 - **Web REPL**: Real-time SQL console via WebSocket
+  ![command line interface ](docs/screenshots/cli-repl.png)
 - **Responsive Design**: Works on desktop and mobile
 
 ###  **APIs & Interfaces**
